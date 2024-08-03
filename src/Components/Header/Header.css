@@ -1,0 +1,121 @@
+.hero {
+  width: 100%;
+  margin: 30px 0;
+  background: url("/header_img.png") no-repeat;
+  background-size: cover;
+  /* position: relative; */
+  min-height: 75vh;
+  border-radius: 12px;
+  display: flex;
+  align-items: start;
+  /* justify-content: center; */
+}
+.hero-content {
+  /* position: absolute; */
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  animation: fadeIn 3s;
+  justify-content: center;
+  padding: 60px 80px;
+}
+
+.hero-content h2 {
+  font-weight: 500;
+  font-size: max(4.5vw, 35px);
+  color: #fff;
+}
+.hero-content p {
+  font-size: 17px;
+  /* line-height: 5px; */
+  font-family: sans-serif;
+  color: #fff;
+}
+.hero-content button {
+  /* border: 0; */
+  color: #747474;
+  padding: 1vw 2.3vw;
+  background: #ffff;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid #ffff;
+}
+.hero-content button:hover {
+  background: transparent;
+  color: #ffff;
+}
+
+@media (max-width: 1000px) {
+  .hero-content p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 805px) {
+  .hero-content {
+    max-width: 100%;
+    padding: 40px 60px;
+  }
+}
+@media (max-width: 690px) {
+  .hero-content h2 {
+    font-size: 5.5vw;
+  }
+  .hero-content {
+    max-width: 95%;
+    margin-top: 50PX;
+    padding: 20px 40px;
+  }
+  .hero-content p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 405px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero-content h2 {
+    font-size: 4.9vw;
+  }
+  .hero-content p {
+    font-size: 8px;
+  }
+  .hero-content {
+    max-width: 95%;
+  }
+  .hero-content button {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+  .hero-content p {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero {
+    min-height: 50vh;
+    align-items: start;
+    justify-content: start;
+  }
+  .hero h2 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .hero-content {
+    padding: 15px;
+  }
+}

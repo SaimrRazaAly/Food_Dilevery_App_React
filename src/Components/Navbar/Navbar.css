@@ -1,0 +1,143 @@
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-left {
+  max-width: 150px;
+}
+.navbar .nav-left img {
+  width: 100%;
+}
+.menu-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 18px;
+  color: #49557e;
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-icon {
+  position: relative;
+}
+.nav-icon .dot {
+  position: absolute;
+  min-height: 10px;
+  min-width: 10px;
+  background: tomato;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+.navbar button {
+  background: transparent;
+  border: 1px solid tomato;
+  border-radius: 50px;
+  color: #49557e;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.navbar button:hover {
+  background: #fff4f2;
+}
+.menu-list .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid tomato;
+}
+.burger {
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+.cross {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+
+  .cross {
+    position: fixed;
+    top: 5%;
+    font-size: 30px;
+    right: 5%;
+  }
+  .show {
+    flex-direction: column;
+    background: rgba(149, 34, 13);
+    color: #ffff;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 5;
+    width: 30%;
+    align-items: center;
+    padding: 100px 0;
+    transition: 0.3s;
+    /* border: 1px solid teal;  */
+  }
+  .cross {
+    display: block;
+  }
+  .menu-list li {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 805px) {
+  .show {
+    width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-right {
+    gap: 20px;
+  }
+  .navbar .nav-left img {
+    width: 70%;
+  }
+  .nav-right button {
+    padding: 8px 18px;
+    font-size: 15px;
+  }
+  .nav-icon img,
+  .search-icon {
+    width: 24px;
+  }
+  .nav-icon .dot {
+    min-height: 7px;
+    min-width: 7px;
+  }
+}
+
+@media (max-width: 460px) {
+  .search-icon {
+    display: none;
+  }
+  .nav-right button {
+    padding: 8px 17px;
+
+    font-size: 11px;
+  }
+  .navbar .nav-left img {
+    width: 50%;
+  }
+
+  .search-icon {
+    width: 20px;
+  }
+}
