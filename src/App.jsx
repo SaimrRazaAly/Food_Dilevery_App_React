@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import LoginPopUp from "./Components/LoginPopUp/LoginPopUp";
 import Cart from "./Pages/Cart/Cart";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
 const [showPopUp,setShowPopUp] = useState(false)
@@ -15,9 +16,14 @@ const [showPopUp,setShowPopUp] = useState(false)
     {showPopUp ? <LoginPopUp setShowPopUp={setShowPopUp}/> : <></>}
       <div className='app'>
         <Navbar setShowPopUp={setShowPopUp} />
-        <Home />
+        <Routes>
+<Route path="/" element={<Home/>}/>
+<Route path="/cart" element={<Cart/>}/>
+{/* <Route path="/order" element={<place}/> */}
+      
+   
+        </Routes>
       </div>
-      <Cart/>
       <Footer/>
     </div>
     </>
