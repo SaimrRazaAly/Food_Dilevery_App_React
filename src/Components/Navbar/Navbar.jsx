@@ -16,15 +16,15 @@ const Navbar = ({setShowPopUp}) => {
         </div>
         <ul className={`menu-list ${mobile ? 'show' : 'hide'  }`}>
           <div className={`cross ${mobile ? 'cross' : 'hide'}`  } onClick={()=> setmobile(false)}>X</div>
-          <li onClick={()=> setmenu("home")} className={menu==='home' ? 'active' : ''}>home</li>
-          <li onClick={()=> setmenu("menu")} className={menu==='menu' ? 'active' : ''}>menu</li>
-          <li onClick={()=> setmenu("mobile-app")} className={menu==='mobile-app' ? 'active' : ''}>mobile-app</li>
-          <li onClick={()=> setmenu("contact-us")} className={menu==='contact-us' ? 'active' : ''}>contact</li>
+          <li onClick={()=> setmenu("home")} className={menu==='home' ? 'active' : ''}> <a href="#page-3"> home</a></li>
+          <li onClick={()=> setmenu("menu")} className={menu==='menu' ? 'active' : ''}> <a href="#page-2"> menu</a></li>
+          <li onClick={()=> setmenu("mobile-app")} className={menu==='mobile-app' ? 'active' : ''}> <a href="#page-3"> mobile-app</a></li>
+          <li onClick={()=> setmenu("contact-us")} className={menu==='contact-us' ? 'active' : ''}> <a href="#page-4"> contact</a></li>
         </ul>
         <div className="nav-right">
             <img src={assets.search_icon} alt="" className="search-icon"/>
             <div className="nav-icon">
-          l<Link to='/cart' ><img src={assets.basket_icon} alt="" /></Link>
+          <Link to='/cart' ><img src={assets.basket_icon} alt="" /></Link>
               {/* <div className='>dot'></div> */}
               <div className={getTotalCartAmount()==0? '':'dot' }></div>
             </div>

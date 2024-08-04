@@ -4,7 +4,7 @@ import './Mobile_App.css'
 const Mobile_App = () => {
   return (
     <>
-    <div className="mobile-section">
+    <div className="mobile-section" id='page-3'>
         <div className="mobile-content">
             <div className="mobile-heading">
 For Better Experience Download Our App

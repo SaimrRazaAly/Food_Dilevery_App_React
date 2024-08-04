@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Home";
 import LoginPopUp from "./Components/LoginPopUp/LoginPopUp";
 import Cart from "./Pages/Cart/Cart";
 import { Route, Routes } from "react-router-dom";
+import PlaceOrder from "./Pages/PlaceOrder/PlaceOrder";
 
 function App() {
 const [showPopUp,setShowPopUp] = useState(false)
@@ -19,6 +20,7 @@ const [showPopUp,setShowPopUp] = useState(false)
         <Routes>
 <Route path="/" element={<Home/>}/>
 <Route path="/cart" element={<Cart/>}/>
+<Route path="/order" element={<PlaceOrder/>}/>
 {/* <Route path="/order" element={<place}/> */}
       
    

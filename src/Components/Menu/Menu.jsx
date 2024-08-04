@@ -4,7 +4,7 @@ import "./Menu.css";
 const Menu = ({category,setcategory}) => {
   return (
     <>
-      <section className="menu-sec">
+      <section className="menu-sec" id='page-2'>
         <h1>Explore our menu</h1>
         <p className="menu-para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat
