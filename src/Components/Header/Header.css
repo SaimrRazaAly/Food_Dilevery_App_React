@@ -14,9 +14,9 @@
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background: url("header_img.png") no-repeat center center/cover;
+  background: url("../../assets/header_img.png") no-repeat center center/cover;
   z-index: -1;
-  filter: brightness(0.91);
+  filter: brightness(0.71);
 }
 
 .hero-content {
@@ -54,7 +54,7 @@
 
 @media (max-width: 780px) {
   .hero {
-    min-height: 60vh;
+    min-height: 90vh;
   }
   
   .hero-content h2 {
@@ -67,19 +67,19 @@
 
   .hero-content {
     padding-left: 10px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    /* text-align: center; */
+    align-items: start;
+    justify-content:start;
   }
 }
 
 @media (max-width: 430px) {
   .hero {
-    min-height: 50vh;
+    min-height: 80vh;
   }
   
   .hero-content h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .hero-content p {
